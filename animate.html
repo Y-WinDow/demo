@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+	<title>animate</title>
+	<meta charset="utf-8">
+	<style>
+		*{margin: 0;padding: 0;}
+		#animate{position: absolute;left:50px;top:50px;width: 50px;height: 50px;background: #000;}
+	</style>
+</head>
+	<body>
+		<div id="animate"></div>
+	</body>
+	<script src="animate.js"></script>
+	<script>
+		animate = new Animate({
+			ele:document.getElementById('animate')
+		});
+		animate.goto({width:500},  3000);
+	</script>
+</html>
